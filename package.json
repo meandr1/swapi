@@ -6,10 +6,10 @@
    "private": true,
    "license": "UNLICENSED",
    "scripts": {
-      "build": "nest build",
+      "build": "NODE_OPTIONS='--max-old-space-size=8192' nest build",
       "// On EC2 use build script": "NODE_OPTIONS='--max-old-space-size=8192' nest build",
       "format": "prettier --write \"src/**/*.ts\" ",
-      "start": "nest start",
+      "start": "NODE_OPTIONS='--max-old-space-size=8192' nest start",
       "// On EC2 use start script": "NODE_OPTIONS='--max-old-space-size=8192' nest start",
       "start:dev": "nest start --watch",
       "start:debug": "nest start --debug --watch",
