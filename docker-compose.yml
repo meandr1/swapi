@@ -2,6 +2,7 @@ version: '3.1'
 
 services:
 
+
   db:
     image: meandr/mysql
     command: --default-authentication-plugin=mysql_native_password
